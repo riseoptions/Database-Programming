@@ -16,7 +16,6 @@ PyMySQL &amp; MySQL Connector
 
 ```python
 import pymysql
-
 connection = pymysql.connect(host='localhost',
                              user='kasutaja',
                              password='salasõna',
@@ -30,3 +29,7 @@ for rida in tulemused:
 
 connection.close()
 ```
+
+
+## MySQL Connector
+**MySQL Connector** on ametlik MySQL'i poolt pakutav teek, mis võimaldab Pythonil suhelda MySQL andmebaasidega. See on usaldusväärne ja hästi dokumenteeritud lahendus, mis toetab uusimaid MySQL funktsioone.
