@@ -12,3 +12,21 @@ PyMySQL &amp; MySQL Connector
 - **Paigaldamine**: Paigalda PyMySQL teek käsurealt:  
   ```bash
   pip install pymysql
+
+
+'''Python
+import pymysql
+
+connection = pymysql.connect(host='localhost',
+                             user='kasutaja',
+                             password='salasõna',
+                             database='andmebaas')
+cursor = connection.cursor()
+cursor.execute("SELECT * FROM tabel")
+tulemused = cursor.fetchall()
+
+for rida in tulemused:
+    print(rida)
+
+connection.close()
+'''
