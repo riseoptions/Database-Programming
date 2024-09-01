@@ -33,3 +33,24 @@ connection.close()
 
 ## MySQL Connector
 **MySQL Connector** on ametlik MySQL'i poolt pakutav teek, mis võimaldab Pythonil suhelda MySQL andmebaasidega. See on usaldusväärne ja hästi dokumenteeritud lahendus, mis toetab uusimaid MySQL funktsioone.
+
+
+```python
+pip install mysql-connector-python
+```
+```python
+import mysql.connector
+
+connection = mysql.connector.connect(host='localhost',
+                                     user='kasutaja',
+                                     password='salasõna',
+                                     database='andmebaas')
+cursor = connection.cursor()
+cursor.execute("SELECT * FROM tabel")
+tulemused = cursor.fetchall()
+
+for rida in tulemused:
+    print(rida)
+
+connection.close()
+```
