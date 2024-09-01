@@ -14,7 +14,7 @@ PyMySQL &amp; MySQL Connector
   pip install pymysql
 
 
-'''Python
+```python
 import pymysql
 
 connection = pymysql.connect(host='localhost',
@@ -29,4 +29,4 @@ for rida in tulemused:
     print(rida)
 
 connection.close()
-'''
+```
